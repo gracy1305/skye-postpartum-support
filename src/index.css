@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Nunito:wght@400;500;600;700;800&display=swap');
+@import 'tailwindcss';
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-border: var(--border);
+  --color-ring: var(--ring);
+  --radius-DEFAULT: var(--radius);
+}
+
+:root {
+  --background: #F8F7FC;
+  --foreground: #2C2645;
+  --card: #FFFFFF;
+  --card-foreground: #2C2645;
+  --primary: #8B72CF;
+  --primary-foreground: #FFFFFF;
+  --secondary: #EDE9F8;
+  --secondary-foreground: #5A4A8A;
+  --muted: #F0EDF9;
+  --muted-foreground: #8A82A8;
+  --accent: #6DB97A;
+  --accent-foreground: #FFFFFF;
+  --border: #E4DFF3;
+  --ring: #8B72CF;
+  --radius: 1rem;
+}
+
+html, body, #root {
+  height: 100%;
+  background-color: var(--background);
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  color: var(--foreground);
+}
+
+.font-display {
+  font-family: 'Fraunces', serif;
+}
+
+/* Hide scrollbars by default */
+::-webkit-scrollbar { width: 0; background: transparent; }
+* { scrollbar-width: none; }
